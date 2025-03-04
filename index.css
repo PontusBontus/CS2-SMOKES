@@ -1,7 +1,7 @@
 body {
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-x: hidden;
     background-color: #101820;
-    margin: 0; /* Remove default body margin */
+    margin: 0; 
 }
 
 .nav-container {
@@ -9,8 +9,8 @@ body {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    align-items: center; /* Align items vertically */
-    padding: 0px; /* Add some padding for spacing */
+    align-items: center; 
+    padding: 0px; 
     margin-top: -30px;
 }
 
@@ -21,7 +21,8 @@ body {
 
 .nav-links {
     display: flex;
-    gap: 20px; /* Add space between links */
+    gap: 20px; 
+    
 }
 
 .nav-links a {
@@ -30,7 +31,7 @@ body {
     transition: color 0.3s;
     font-family: Inter, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
     font-weight: 400;
-    font-size: 18px; /* Adjust font size if needed */
+    font-size: 18px; 
     margin-top: -20px;
 }
 
