@@ -1,0 +1,62 @@
+body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    background-color: #101820;
+    margin: 0; /* Remove default body margin */
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Align items vertically */
+    padding: 0px; /* Add some padding for spacing */
+    margin-top: -30px;
+}
+
+.logo {
+    width: auto;
+    height: 180px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px; /* Add space between links */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s;
+    font-family: Inter, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 18px; /* Adjust font size if needed */
+    margin-top: -20px;
+}
+
+.nav-links a:hover {
+    color: #FEE715;
+}
+
+.content {
+    display: flex;
+}
+
+.text {
+    margin-left: 110px;
+    margin-top: 50px;
+    font-family: Inter, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+    color: white;
+    font-size: 50px;
+}
+
+.sidepic {
+    height: 500px;
+    width: auto;
+    margin-top: -70px;
+    margin-right: -130px
+}
+
+.highlight {
+    color: #FEE715;
+}
