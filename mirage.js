@@ -1,4 +1,4 @@
-const buttons = document.querySelectorAll('.map-button');
+const buttons = document.querySelectorAll('.map-button, .map-button2'); // Select both classes
 const popup = document.getElementById('video-popup');
 const video = document.getElementById('popup-video');
 const closeBtn = document.querySelector('.close-btn');
