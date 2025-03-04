@@ -1,9 +1,14 @@
 body {
-    overflow-x: hidden;
-    background-color: #101820;
+    font-family: Arial, sans-serif;
     margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #101820;
 }
 
+/* Navbar Styles */
 .nav-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -38,56 +43,79 @@ body {
     color: #FEE715;
 }
 
+/* Map Container Styles */
 .map-container {
     position: relative;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .map-image {
-    width: 100%;
-    height: auto;
+    width: 550px; /* Adjust this to match the new image width */
+    margin: 0 auto; /* Center the map */
+    margin-top: -140px; /* Add space below the navbar */
+}
+
+.map-image {
+    width: 100%; /* This will make the image fill the container */
+    height: auto; /* Maintains aspect ratio */
     display: block;
-  }
-  
-  .map-button {
+}
+
+.map-button {
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.7);
-    border: 2px solid #fff;
+    background-color: rgba(0, 123, 255, 0.7);
+    border: 2px solid #0066ff;
     border-radius: 50%;
     width: 30px;
     height: 30px;
     cursor: pointer;
     transition: transform 0.2s ease;
-  }
-  
-  .map-button:hover {
+}
+
+.map-button:hover {
     transform: scale(1.2);
-  }
-  
-  .popup {
+}
+
+/* Dark Overlay Styles */
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Darken the background */
+    z-index: 999; /* Ensure it's below the popup but above everything else */
+}
+
+/* Popup Styles */
+.popup {
     display: none;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.9);
-    padding: 20px;
-    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 10);
     z-index: 1000;
-  }
-  
-  .popup video {
-    max-width: 90vw;
-    max-height: 90vh;
-  }
-  
-  .close-btn {
-    position: absolute;
-    top: 10px;
-    right: 20px;
+    text-align: center;
+}
+
+.popup video {
+    max-width: 95vw; /* Adjust this to make the video larger */
+    max-height: 70vh; /* Slightly smaller to leave space for the text */
+    min-width: 600px;
+    min-height: 400px;
+    display: block;
+    margin: 0 auto; /* Center the video */
+}
+
+.popup-text {
+    color: white;
+    font-size: 16px;
+    margin-top: 10px; /* Space between video and text */
+}
+
+.close-btn {
+    position: relative;
+    top: 5px;
+    right: -410px;
     font-size: 24px;
     color: white;
     cursor: pointer;
-  }
+}

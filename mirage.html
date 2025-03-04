@@ -7,13 +7,16 @@
     <link rel="stylesheet" href="mirage.css">
 </head>
 <body>
-<div class="nav-container">
-    <a href="index.html"><img src="CS2SmokesLogga.png" alt="Logo" class="logo"></a>
-    <div class="nav-links">
+    <!-- Navbar -->
+    <div class="nav-container">
+        <a href="index.html"><img src="CS2SmokesLogga.png" alt="Logo" class="logo"></a>
+        <div class="nav-links">
             <a href="maps.html">Maps</a>
             <a href="faq.html">FAQ</a>
+        </div>
     </div>
 
+    <!-- Map Container -->
     <div class="map-container">
         <img src="miragemap.png" alt="CS:GO Map" class="map-image">
         
@@ -24,13 +27,19 @@
         
         <!-- Popup for video -->
         <div id="video-popup" class="popup">
-          <span class="close-btn">&times;</span>
-          <video id="popup-video" controls>
-            <source src="" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
+            <span class="close-btn">&times;</span>
+            <video id="popup-video" controls>
+                <source src="" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="popup-text">
+                This is a tutorial on how to throw the perfect smoke grenade.
+            </div>
         </div>
     </div>
-    
+
+    <div id="overlay"></div>
+
     <script src="mirage.js"></script>
-</div>
+</body>
+</html>
