@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mirage Lineups</title>
+    <link rel="stylesheet" href="mirage.css">
+</head>
+<body>
+<div class="nav-container">
+    <a href="index.html"><img src="CS2SmokesLogga.png" alt="Logo" class="logo"></a>
+    <div class="nav-links">
+            <a href="maps.html">Maps</a>
+            <a href="faq.html">FAQ</a>
+    </div>
+
+    <div class="map-container">
+        <img src="miragemap.png" alt="CS:GO Map" class="map-image">
+        
+        <!-- Buttons for specific locations -->
+        <button class="map-button" style="top: 20%; left: 30%;" data-video="ct-spawn.mp4">CT Spawn</button>
+        <button class="map-button" style="top: 40%; left: 50%;" data-video="ramp-a.mp4">Ramp A</button>
+        <!-- Add more buttons as needed -->
+        
+        <!-- Popup for video -->
+        <div id="video-popup" class="popup">
+          <span class="close-btn">&times;</span>
+          <video id="popup-video" controls>
+            <source src="" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+    </div>
+    
+    <script src="mirage.js"></script>
+</div>

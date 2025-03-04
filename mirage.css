@@ -1,0 +1,93 @@
+body {
+    overflow-x: hidden;
+    background-color: #101820;
+    margin: 0;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    margin-top: -30px;
+}
+
+.logo {
+    width: auto;
+    height: 180px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s;
+    font-family: Inter, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: -20px;
+}
+
+.nav-links a:hover {
+    color: #FEE715;
+}
+
+.map-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .map-image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .map-button {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 2px solid #fff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .map-button:hover {
+    transform: scale(1.2);
+  }
+  
+  .popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 1000;
+  }
+  
+  .popup video {
+    max-width: 90vw;
+    max-height: 90vh;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+  }

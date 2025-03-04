@@ -37,26 +37,3 @@ body {
 .nav-links a:hover {
     color: #FEE715;
 }
-
-.content {
-    display: flex;
-}
-
-.text {
-    margin-left: 110px;
-    margin-top: 50px;
-    font-family: Inter, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
-    color: white;
-    font-size: 50px;
-}
-
-.sidepic {
-    height: 500px;
-    width: auto;
-    margin-top: -70px;
-    margin-right: -130px
-}
-
-.highlight {
-    color: #FEE715;
-}

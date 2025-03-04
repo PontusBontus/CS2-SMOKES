@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #101820;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    margin-top: -30px;
+}
+
+.logo {
+    width: auto;
+    height: 180px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s;
+    font-family: Inter, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: -20px;
+}
+
+.nav-links a:hover {
+    color: #FEE715;
+}
+
+.container {
+    text-align: center;
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.map-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.map-item {
+    position: relative;
+    overflow: hidden;
+    width: 350px;
+    height: 350px;
+    border-radius: 7px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+    cursor: pointer;
+}
+
+.map-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.map-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: filter 0.3s ease;
+}
+
+.map-name {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Inter, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 1.9);
+    font-style: italic;
+}
+
+.map-item:first-child:hover .map-image {
+    filter: brightness(1.4);
+}
+
+.map-item:last-child:hover .map-image {
+    filter: brightness(1.1);
+}
