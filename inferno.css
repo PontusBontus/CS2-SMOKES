@@ -8,7 +8,6 @@ body {
     background-color: #101820;
 }
 
-/* Navbar Styles */
 .nav-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -43,23 +42,22 @@ body {
     color: #FEE715;
 }
 
-/* Map Container Styles */
 .map-container {
     position: relative;
-    width: 550px; /* Adjust this to match the new image width */
-    margin: 0 auto; /* Center the map */
-    margin-top: -140px; /* Add space below the navbar */
+    width: 550px;
+    margin: 0 auto;
+    margin-top: -140px;
 }
 
 .map-image {
-    width: 100%; /* This will make the image fill the container */
-    height: auto; /* Maintains aspect ratio */
+    width: 100%;
+    height: auto;
     display: block;
 }
 
 .map-button {
     position: absolute;
-    background-color: rgba(0, 123, 255, 0.7); /* Blue for CT side */
+    background-color: rgba(0, 123, 255, 0.7);
     border: 2px solid #0066ff;
     border-radius: 50%;
     width: 30px;
@@ -70,7 +68,7 @@ body {
 
 .map-button2 {
     position: absolute;
-    background-color: rgba(255, 140, 0, 0.7); /* Orange for T side */
+    background-color: rgba(255, 140, 0, 0.7);
     border: 2px solid #c73800;
     border-radius: 50%;
     width: 30px;
@@ -80,10 +78,9 @@ body {
 }
 
 .map-button:hover, .map-button2:hover {
-    transform: scale(1.2); /* Scale effect on hover */
+    transform: scale(1.2);
 }
 
-/* Dark Overlay Styles */
 #overlay {
     display: none;
     position: fixed;
@@ -91,11 +88,10 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Darken the background */
-    z-index: 999; /* Ensure it's below the popup but above everything else */
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999;
 }
 
-/* Popup Styles */
 .popup {
     display: none;
     position: fixed;
@@ -108,18 +104,18 @@ body {
 }
 
 .popup video {
-    max-width: 95vw; /* Adjust this to make the video larger */
-    max-height: 70vh; /* Slightly smaller to leave space for the text */
+    max-width: 95vw;
+    max-height: 70vh;
     min-width: 600px;
     min-height: 400px;
     display: block;
-    margin: 0 auto; /* Center the video */
+    margin: 0 auto;
 }
 
 .popup-text {
     color: white;
     font-size: 16px;
-    margin-top: 10px; /* Space between video and text */
+    margin-top: 10px;
     font-family: Inter, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;;
 }
 
