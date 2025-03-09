@@ -1,3 +1,5 @@
+<!--Kod av Pontus-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,23 +10,25 @@
 </head>
 <body>
     <div class="nav-container">
-        <a href="index.html"><img src="CS2SmokesLogga.png" alt="Logo" class="logo"></a>
+        <a href="index.html">
+            <img src="CS2SmokesLogga.png" alt="Logo" class="logo">
+        </a>
         <div class="nav-links">
             <a href="maps.html">Maps</a>
             <a href="faq.html">FAQ</a>
         </div>
     </div>
 
-    <div class="container">
-        <div class="map-container">
-            <a href="mirage.html" class="map-link">
-                <div class="map-item" onmouseover="expandMap('map1')" onmouseout="shrinkMap('map1')">
+    <div class="container"> <!-- Huvuddivision för mapparna -->
+        <div class="map-container"> <!-- Division för kartbilderna-->
+            <a href="mirage.html" class="map-link"> <!-- Länk till Mirage kartan -->
+                <div class="map-item" onmouseover="expandMap('map1')" onmouseout="shrinkMap('map1')"> <!-- Förstorar bild när man hovrar -->
                     <img src="miragemap.jpg" alt="Map 1" class="map-image" id="map1">
                     <div class="map-name">Mirage</div>
                 </div>
             </a>
-            <a href="inferno.html" class="map-link">
-                <div class="map-item" onmouseover="expandMap('map2')" onmouseout="shrinkMap('map2')">
+            <a href="inferno.html" class="map-link"> <!-- Länk till Inferno kartan -->
+                <div class="map-item" onmouseover="expandMap('map2')" onmouseout="shrinkMap('map2')"> <!-- Förstorar bild när man hovrar -->
                     <img src="infernomap.jpg" alt="Map 2" class="map-image" id="map2">
                     <div class="map-name">Inferno</div>
                 </div>

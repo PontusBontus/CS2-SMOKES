@@ -1,57 +1,55 @@
+/*Kod av Felix*/
+
 body {
     overflow-x: hidden;
     background-color: #101820;
-    margin: 0;
     margin: 0; 
 }
 
-.nav-container {
-    max-width: 1200px;
+.nav-container { 
+    max-width: 1200px; /* Begränsar bredden*/
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
+    display: flex; /*Används för att navigationsmenyn ska visas horisontellt*/
+    justify-content: space-between; /* Sprider ut innehållet */
     align-items: center;
-    padding: 0px;
-    align-items: center; 
     padding: 0px; 
-    margin-top: -30px;
+    margin-top: -30px; /* Justerar positionen uppåt */
 }
 
 .logo {
     width: auto;
-    height: 180px;
+    height: 180px; /* Sätter höjden på logotypen */
 }
 
 .nav-links {
-    display: flex;
-    gap: 20px;
+    display: flex; /* Gör länkarna horisontella */
+    gap: 20px; /* Skapar mellanrum mellan länkar */
 }
 
 .nav-links a {
-    text-decoration: none;
+    text-decoration: none; /* Tar bort understrykning */
     color: #ffffff;
-    transition: color 0.3s;
+    transition: color 0.3s; /* Gör att färgändringen sker på 0.3 sekunder*/
     font-family: Inter, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
     font-weight: 400;
-    font-size: 18px;
-    font-size: 18px; 
-    margin-top: -20px;
+    font-size: 18px;  
+    margin-top: -20px; /* Flyttar länkarna uppåt */
 }
 
 .nav-links a:hover {
-    color: #FEE715;
+    color: #FEE715; /* Ändrar färg när man hovrar över länkarna */
 }
 
 h1 {
-    text-align: center;
+    text-align: center; /*Centrerar h1 texten*/
 }
 
 .faq-section {
     max-width: 800px;
     margin: 50px auto;
-    padding: 20px;
+    padding: 20px; /* Inre avstånd runt innehållet i FAQ-sektionen */
     color: #ffffff;
-    font-family: Inter, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+    font-family: Inter, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif; /* Vald typsnitt */
 }
 
 .faq-item {
@@ -59,11 +57,11 @@ h1 {
 }
 
 .faq-question {
-    cursor: pointer;
-    padding: 10px;
+    cursor: pointer; /*Ändrar muspekaren när man hovrar över en fråga*/
+    padding: 10px; /* Inre avstånd runt frågan*/
     background-color: #202830;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+    border-radius: 5px; /* Rundade hörn för frågeområdet */
+    transition: background-color 0.3s; /*0.3 sekunders övergång av bakgrundsfärgen vid hovring */
 }
 
 .faq-question:hover {
@@ -71,9 +69,9 @@ h1 {
 }
 
 .faq-answer {
-    padding: 10px;
+    padding: 10px; /* Inre avstånd för svaren */
     background-color: #303840;
-    border-radius: 5px;
+    border-radius: 5px; /* Rundade hörn för svarsområdet */
     margin-top: 5px;
-    display: none;
+    display: none; /* Svar döljs som standard */
 }

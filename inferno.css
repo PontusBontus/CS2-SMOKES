@@ -1,5 +1,6 @@
+/*Kod av Pontus*/
+
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     justify-content: center;
@@ -8,43 +9,43 @@ body {
     background-color: #101820;
 }
 
-.nav-container {
-    max-width: 1200px;
+.nav-container { 
+    max-width: 1200px; /* Begränsar bredden*/
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
+    display: flex; /*Används för att navigationsmenyn ska visas horisontellt*/
+    justify-content: space-between; /* Sprider ut innehållet */
     align-items: center;
-    padding: 0px;
-    margin-top: -30px;
+    padding: 0px; 
+    margin-top: -30px; /* Justerar positionen uppåt */
 }
 
 .logo {
     width: auto;
-    height: 180px;
+    height: 180px; /* Sätter höjden på logotypen */
 }
 
 .nav-links {
-    display: flex;
-    gap: 20px;
+    display: flex; /* Gör länkarna horisontella */
+    gap: 20px; /* Skapar mellanrum mellan länkar */
 }
 
 .nav-links a {
-    text-decoration: none;
+    text-decoration: none; /* Tar bort understrykning */
     color: #ffffff;
-    transition: color 0.3s;
+    transition: color 0.3s; /* Gör att färgändringen sker på 0.3 sekunder*/
     font-family: Inter, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
     font-weight: 400;
-    font-size: 18px;
-    margin-top: -20px;
+    font-size: 18px;  
+    margin-top: -20px; /* Flyttar länkarna uppåt */
 }
 
 .nav-links a:hover {
-    color: #FEE715;
+    color: #FEE715; /* Ändrar färg när man hovrar över länkarna */
 }
 
 .map-container {
-    position: relative;
-    width: 550px;
+    position: relative; /* Behåller knapparnas position relativt kartan */
+    width: 550px; /* Sätter kartans bredd */
     margin: 0 auto;
     margin-top: -140px;
 }
@@ -52,22 +53,22 @@ body {
 .map-image {
     width: 100%;
     height: auto;
-    display: block;
+    display: block; /* Tar bort extra utrymme under bilden */
 }
 
 .map-button {
-    position: absolute;
+    position: absolute; /* Placerar knapparna exakt på kartan */
     background-color: rgba(0, 123, 255, 0.7);
     border: 2px solid #0066ff;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-    transition: transform 0.2s ease;
+    border-radius: 50%; /* Gör knappen rund */
+    width: 30px; /* Sätter knappens bredd */
+    height: 30px; /* Sätter knappens höjd */
+    cursor: pointer; /* Visar att knappen är klickbar */
+    transition: transform 0.2s ease; /*Övergång på 0.2 sekunder när man hovrar*/
 }
 
 .map-button2 {
-    position: absolute;
+    position: absolute; /* Samma funktion som .map-button men annan färg */
     background-color: rgba(255, 140, 0, 0.7);
     border: 2px solid #c73800;
     border-radius: 50%;
@@ -78,52 +79,52 @@ body {
 }
 
 .map-button:hover, .map-button2:hover {
-    transform: scale(1.2);
+    transform: scale(1.2); /* Förstorar knappen när man hovrar */
 }
 
 #overlay {
-    display: none;
-    position: fixed;
+    display: none; /* Döljer overlayen som standard */
+    position: fixed; /*Gör att overlayen blir över hela skärmen */
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.7); /* Mörkt transparent överlägg */
+    z-index: 999; /* Lägger överlägget över resten av sidan */
 }
 
 .popup {
-    display: none;
-    position: fixed;
+    display: none; /* Döljer popup-fönstret som standard */
+    position: fixed; /* Används så att popupen hamnar i mitten av skärmen */
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 10);
-    z-index: 1000;
-    text-align: center;
+    transform: translate(-50%, -50%); /* Centrerar popupen exakt */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 10); /* Lägger till en skugga */
+    z-index: 1000; /* Sätter popupen över överlägget */
+    text-align: center; /* Centrerar innehållet i popupen */
 }
 
 .popup video {
-    max-width: 95vw;
-    max-height: 70vh;
+    max-width: 95vw; /* Sätter maxbredd till 95% av viewportens bredd */
+    max-height: 70vh; /* Sätter maxhöjd till 70% av viewportens höjd */
     min-width: 600px;
     min-height: 400px;
-    display: block;
+    display: block; /* Tar bort extra utrymme runt videon */
     margin: 0 auto;
 }
 
 .popup-text {
     color: white;
-    font-size: 16px;
+    font-size: 16px; 
     margin-top: 10px;
-    font-family: Inter, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;;
+    font-family: Inter, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
 }
 
 .close-btn {
-    position: relative;
+    position: relative; /* Behåller positionen relativt till popupen */
     top: 5px;
     right: -410px;
     font-size: 24px;
     color: white;
-    cursor: pointer;
+    cursor: pointer; /* Visar att knappen är klickbar */ 
 }

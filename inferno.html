@@ -1,3 +1,5 @@
+<!--Kod av Pontus-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,34 +10,37 @@
 </head>
 <body>
 
-    <div class="nav-container">
-        <a href="index.html"><img src="CS2SmokesLogga.png" alt="Logo" class="logo"></a>
+    <div class="nav-container"> <!--Division för navigationsbaren-->
+        <a href="index.html"><img src="CS2SmokesLogga.png" alt="Logo" class="logo"></a> <!--Loggan tar dig till framsidan-->
         <div class="nav-links">
+            <!--Övriga menyval-->
             <a href="maps.html">Maps</a>
             <a href="faq.html">FAQ</a>
         </div>
     </div>
 
-    <div class="map-container">
+    <div class="map-container"> <!-- Container för kartbild och knappar -->
         <img src="CS2_inferno_radar.png" alt="CS:GO Map" class="map-image">
         
+        <!-- Knappar placerade på kartan som öppnar videor vid klick -->
         <button class="map-button2" style="top: 20%; left: 57%;" data-video="ct inferno.mp4"></button>
         <button class="map-button2" style="top: 58%; left: 67%;" data-video="long inferno.mp4"></button>
         <button class="map-button" style="top: 63%; left: 48%;" data-video="mid inferno.mp4"></button>
 
+        <!-- Popup-fönster när man klickar på knappen och öppnar videon -->
         <div id="video-popup" class="popup">
-            <span class="close-btn">&times;</span>
+            <span class="close-btn">&times;</span> <!-- Stängningsknapp -->
             <video id="popup-video" controls>
                 <source src="" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-            <div class="popup-text">
+            <div class="popup-text"> <!-- Beskrivningstext för videon -->
                 This is a tutorial on how to throw the perfect smoke grenade.
             </div>
         </div>
     </div>
 
-    <div id="overlay"></div>
+    <div id="overlay"></div> <!-- Bakgrundsfärg för popup-fönstret -->
 
     <script src="inferno.js"></script>
 </body>
